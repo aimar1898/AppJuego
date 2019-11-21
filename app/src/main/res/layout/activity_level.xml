@@ -7,21 +7,21 @@
 
     <EditText
         android:id="@+id/txtAnswer"
-        android:layout_width="wrap_content"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_above="@+id/btAnswer"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_marginStart="96dp"
-        android:layout_marginLeft="96dp"
-        android:layout_marginEnd="102dp"
-        android:layout_marginRight="102dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginLeft="31dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="9dp"
         android:layout_weight="1"
         android:ems="10"
-        android:hint="Who's he?"
+        android:hint="@string/txtAnswer"
         android:inputType="textPersonName" />
 
     <Button
@@ -45,7 +45,7 @@
     <ImageView
         android:id="@+id/ivImage"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="424dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
@@ -54,10 +54,10 @@
         android:layout_alignParentBottom="true"
         android:layout_marginStart="0dp"
         android:layout_marginLeft="0dp"
-        android:layout_marginTop="122dp"
+        android:layout_marginTop="128dp"
         android:layout_marginEnd="0dp"
         android:layout_marginRight="0dp"
-        android:layout_marginBottom="233dp"
+        android:layout_marginBottom="179dp"
         android:layout_weight="1" />
 
     <ImageView

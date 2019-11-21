@@ -3,7 +3,6 @@ package com.example.appjuego;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -18,14 +17,13 @@ public class LevelActivity extends AppCompatActivity {
     private ImageView ivLives;
     private ImageView ivImage;
     private TextView txtAnswer;
-    private Button btAnswer;
     private MediaPlayer mp;
     private int level;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_level1);
+        setContentView(R.layout.activity_level);
 
         mp = MediaPlayer.create(this, R.raw.kraftwerk);
         mp.start();
@@ -34,7 +32,6 @@ public class LevelActivity extends AppCompatActivity {
         ivLives = findViewById(R.id.ivLives);
         ivImage = findViewById(R.id.ivImage);
         txtAnswer = findViewById(R.id.txtAnswer);
-        btAnswer = findViewById(R.id.btAnswer);
         txtUser = findViewById(R.id.txtUser);
         ivLives.setImageResource(R.drawable.tresvidas);
         name = getIntent().getStringExtra("player");
@@ -80,7 +77,6 @@ public class LevelActivity extends AppCompatActivity {
         }
         else {
             Toast.makeText(this, "Escribe tu respuesta...", Toast.LENGTH_LONG).show();
-
         }
 
     }
